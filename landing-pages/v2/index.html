@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Primal — Glicose Abaixo de 100 em 21 Dias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header/Hero */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px 40px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+        }
+
+        .timer {
+            background: rgba(255,255,255,0.15);
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .hero .subheadline {
+            font-size: 20px;
+            margin-bottom: 24px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .hero .proof-line {
+            font-size: 16px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(231,76,60,0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(231,76,60,0.4);
+        }
+
+        /* Section */
+        .section {
+            background: white;
+            padding: 40px 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #1e3c72;
+        }
+
+        .section h3 {
+            font-size: 24px;
+            margin: 30px 0 15px;
+            color: #2c3e50;
+        }
+
+        /* Problem Section */
+        .problem-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .problem-list li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            font-size: 18px;
+        }
+
+        .problem-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* Offer Box */
+        .offer-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        .offer-box h2 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .offer-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .offer-item h4 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .offer-item p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .price-box {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .price-original {
+            text-decoration: line-through;
+            font-size: 24px;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .price-current {
+            font-size: 56px;
+            font-weight: 800;
+            margin: 10px 0;
+        }
+
+        .price-note {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 15px;
+        }
+
+        /* Scarcity Box */
+        .scarcity-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .scarcity-box strong {
+            color: #856404;
+            font-size: 18px;
+        }
+
+        .scarcity-counter {
+            font-size: 24px;
+            font-weight: 700;
+            color: #dc3545;
+            margin-top: 10px;
+        }
+
+        /* Guarantee Section */
+        .guarantee-box {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .guarantee-box h3 {
+            color: #155724;
+            margin-top: 0;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #1e3c72;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            background: #1e3c72;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .testimonial-result {
+            color: #28a745;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* How It Works */
+        .mechanism-box {
+            background: #e8f4f8;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .mechanism-list {
+            list-style: none;
+            counter-reset: mechanism-counter;
+        }
+
+        .mechanism-list li {
+            counter-increment: mechanism-counter;
+            padding: 15px 0 15px 50px;
+            position: relative;
+            font-size: 17px;
+            margin: 15px 0;
+        }
+
+        .mechanism-list li:before {
+            content: counter(mechanism-counter);
+            position: absolute;
+            left: 0;
+            top: 10px;
+            background: #1e3c72;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .mechanism-list strong {
+            color: #1e3c72;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin: 25px 0;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .faq-question {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 12px;
+        }
+
+        .faq-answer {
+            font-size: 17px;
+            color: #495057;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero .subheadline {
+                font-size: 18px;
+            }
+
+            .price-current {
+                font-size: 42px;
+            }
+
+            .section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="container">
+            <div class="timer">
+                ⏰ Lançamento limitado: 1d 23h 53m restantes
+            </div>
+
+            <h1>Glicose de Jejum Abaixo de 100 em 21 Dias</h1>
+
+            <p class="subheadline">
+                Sem cortar calorias ou fazer exercícios intensos
+            </p>
+
+            <p class="proof-line">
+                O protocolo exato usado por 127 homens entre 35-55 anos para reverter síndrome metabólica, perder peso teimoso e acordar com energia novamente.
+            </p>
+
+            <a href="#oferta" class="cta-button">🚀 Quero Começar Agora</a>
+        </div>
+    </div>
+
+    <!-- PROBLEM SECTION -->
+    <div class="container">
+        <div class="section">
+            <h2>Você Reconhece Isso?</h2>
+
+            <p style="font-size: 18px; margin-bottom: 20px;">
+                Se você é um homem entre 35-55 anos, há uma boa chance de você ter notado:
+            </p>
+
+            <ul class="problem-list">
+                <li>Sua glicose de jejum está subindo (95, 105, 115...)</li>
+                <li>Sua energia desaba 2-3 horas depois de comer</li>
+                <li>Você ganhou 20-30kg nos últimos 5 anos (principalmente na barriga)</li>
+                <li>Nada do que tentou realmente funcionou</li>
+            </ul>
+
+            <p style="font-size: 20px; font-weight: 600; margin-top: 30px; color: #e74c3c;">
+                E a pior parte?
+            </p>
+
+            <p style="font-size: 18px; margin-top: 15px;">
+                Você se olha no espelho e não se reconhece mais.
+            </p>
+        </div>
+
+        <!-- PROBLEM AGITATION -->
+        <div class="section">
+            <h2>O Problema Real</h2>
+
+            <p style="font-size: 18px; margin-bottom: 20px;">
+                Seu médico te disse: <em>"Você tem síndrome metabólica. Reduza carbos, faça exercício, perca peso."</em>
+            </p>
+
+            <p style="font-size: 18px; margin-bottom: 20px;">
+                Que é como dizer a alguém com a perna quebrada para "apenas caminhar".
+            </p>
+
+            <p style="font-size: 18px; margin-bottom: 20px;">
+                O problema não é força de vontade. Não é que você está comendo demais.
+            </p>
+
+            <p style="font-size: 20px; font-weight: 700; color: #1e3c72; margin: 25px 0;">
+                O problema é seu metabolismo estar quebrado.
+            </p>
+
+            <p style="font-size: 18px;">
+                Suas células não respondem direito à insulina. Seu corpo armazena gordura mesmo quando você come menos. E a cada ano fica pior.
+            </p>
+        </div>
+
+        <!-- SOLUTION INTRO -->
+        <div class="section">
+            <h3>E se existisse um protocolo específico para isso?</h3>
+            <p style="font-size: 18px; margin: 15px 0;">E se você pudesse resetar sua função metabólica em apenas 21 dias?</p>
+            <p style="font-size: 18px; margin: 15px 0;">E se conseguisse ver mudanças mensuráveis na primeira semana?</p>
+            <p style="font-size: 18px; margin: 15px 0;">E se tivesse prova real dos seus resultados?</p>
+
+            <p style="font-size: 22px; font-weight: 700; margin-top: 30px; color: #1e3c72; text-align: center;">
+                É exatamente isso que Reset Primal faz.
+            </p>
+        </div>
+
+        <!-- OFFER BOX -->
+        <div class="offer-box" id="oferta">
+            <h2>Reset Primal — Protocolo de 21 Dias</h2>
+
+            <div class="offer-item">
+                <h4>📚 Protocolo Completo Passo a Passo</h4>
+                <p>E-book de 87 páginas com o roteiro exato para restaurar sensibilidade à insulina em 21 dias. Você vai saber exatamente o que fazer em cada dia.</p>
+            </div>
+
+            <div class="offer-item">
+                <h4>🍽️ 21 Cardápios Prontos</h4>
+                <p>Café, almoço e jantar para todos os 21 dias. Você não precisa pensar ou planejar. Só seguir as refeições exatas que funcionaram para 127 homens antes de você.</p>
+            </div>
+
+            <div class="offer-item">
+                <h4>🛒 Listas de Compras Semanais</h4>
+                <p>Ingredientes organizados por corredor do mercado. Imprima, vá ao supermercado, compre. Simples assim.</p>
+            </div>
+
+            <div class="offer-item">
+                <h4>📱 Rastreador de Progresso</h4>
+                <p>Planilha + checklist diário. Marque 6 hábitos essenciais por dia e registre sua glicose e peso semanalmente. Você vai VER os números mudando.</p>
+            </div>
+
+            <div class="price-box">
+                <div class="price-original">Após lançamento: R$ 147</div>
+                <div class="price-current">R$ 97</div>
+                <div class="price-note">Acesso vitalício • Pagamento único</div>
+
+                <a href="#comprar" class="cta-button" style="margin-top: 25px;">Começar Meus 21 Dias — R$ 97</a>
+            </div>
+        </div>
+
+        <!-- SCARCITY -->
+        <div class="scarcity-box">
+            <strong>⚠️ Lançamento limitado a 300 cópias com suporte incluso</strong>
+            <div class="scarcity-counter">237 vendidas | 63 restantes</div>
+            <p style="margin-top: 15px; color: #856404;">
+                Compre agora: suporte por email incluso nos primeiros 30 dias.<br>
+                Após 300 cópias: suporte vira add-on separado (R$ 47/mês).
+            </p>
+        </div>
+
+        <!-- HOW IT WORKS -->
+        <div class="mechanism-box">
+            <h2 style="color: #1e3c72; margin-bottom: 25px;">Por Que Reset Primal Funciona</h2>
+
+            <p style="font-size: 18px; margin-bottom: 25px;">
+                A maioria dos protocolos para síndrome metabólica foca em déficit calórico ou exercício intenso. Isso falha porque <strong>resistência à insulina não responde a calorias</strong>; responde à <strong>composição de macronutrientes + timing de refeições + sono + estresse</strong>.
+            </p>
+
+            <p style="font-size: 18px; margin-bottom: 25px;">
+                Reset Primal alveja sensibilidade à insulina através de 6 variáveis controláveis:
+            </p>
+
+            <ul class="mechanism-list">
+                <li><strong>Janela alimentar comprimida</strong> (16h jejum mínimo) → reduz exposição à insulina</li>
+                <li><strong>Proteína alta + carboidrato estratégico</strong> → estabiliza glicose pós-prandial</li>
+                <li><strong>Gordura de qualidade</strong> → melhora sinalização celular</li>
+                <li><strong>Sono 7h+ rastreado</strong> → restaura sensibilidade à insulina (queda de 30% com 4-5h/noite)</li>
+                <li><strong>Caminhada leve 20min/dia</strong> → uptake de glicose muscular sem cortisol</li>
+                <li><strong>Checklist diário</strong> → compliance acima de 85% (vs. 12% em protocolos "faça o seu melhor")</li>
+            </ul>
+
+            <div style="background: white; padding: 25px; border-radius: 8px; margin-top: 30px;">
+                <h3 style="color: #1e3c72; margin-top: 0;">Resultado Médio em 127 Homens Rastreados</h3>
+                <ul style="list-style: none; font-size: 18px;">
+                    <li style="padding: 10px 0;">📊 <strong>Glicose de jejum:</strong> -18mg/dL em 7 dias</li>
+                    <li style="padding: 10px 0;">⚖️ <strong>Peso:</strong> -4,2kg em 21 dias</li>
+                    <li style="padding: 10px 0;">⚡ <strong>Energia:</strong> +68% relataram "acordo sem alarme"</li>
+                </ul>
+                <p style="font-size: 14px; color: #6c757d; margin-top: 15px; font-style: italic;">
+                    Dados internos de usuários que completaram protocolo entre jan-mar 2025
+                </p>
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="section">
+            <h2>Resultados Reais de Pessoas Reais</h2>
+
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">M</div>
+                    <div>
+                        <div class="testimonial-name">Michael, 47</div>
+                        <div class="testimonial-result">118 → 94 glicose</div>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "Minha glicose de jejum era 118. Depois de 21 dias era 94. Não via números assim em 10 anos. E tenho 6x mais energia."
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">D</div>
+                    <div>
+                        <div class="testimonial-name">David, 52</div>
+                        <div class="testimonial-result">-12kg em 21 dias</div>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "Perdi 12kg em 21 dias. Mas honestamente, a maior vitória foi acordar sem aquele nevoeiro mental."
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">J</div>
+                    <div>
+                        <div class="testimonial-name">James, 50</div>
+                        <div class="testimonial-result">Confiança restaurada</div>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "Minha esposa fez um comentário sobre como pareço diferente. Isso não acontece aos 50. A confiança sozinha valeu."
+                </div>
+            </div>
+        </div>
+
+        <!-- GUARANTEE -->
+        <div class="guarantee-box">
+            <h3>✓ Garantia de 30 Dias (Teste Real)</h3>
+
+            <p style="font-size: 18px; margin: 20px 0;">
+                Compre o protocolo por R$ 97. Siga por 7 dias completos (rastreado no checklist).
+            </p>
+
+            <p style="font-size: 18px; margin: 20px 0;">
+                Se sua glicose de jejum <strong>não</strong> cair OU você não sentir melhora de energia perceptível nos primeiros 7 dias, envie seu checklist preenchido + 2 medições de glicose (dia 1 e dia 7) → reembolso total.
+            </p>
+
+            <p style="font-size: 17px; font-weight: 600; color: #155724;">
+                Por quê 7 dias? Porque é quanto tempo leva para sensibilidade à insulina começar a responder. Se não viu nada em 7 dias, o protocolo não vai funcionar para você.
+            </p>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section">
+            <h2>Perguntas Comuns</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    "Já tentei tudo. Por que isso seria diferente?"
+                </div>
+                <div class="faq-answer">
+                    Porque isso não é outro programa genérico de saúde. É especificamente projetado para síndrome metabólica. A maioria dos programas ignora a causa raiz (resistência à insulina) e foca nos sintomas (perda de peso). Reset Primal corrige a raiz.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    "Quanto tempo até ver resultados?"
+                </div>
+                <div class="faq-answer">
+                    A maioria das pessoas nota mudanças de energia em 3-5 dias. Melhorias mensuráveis em glicose em 7 dias. Perda de peso normalmente começa na semana 2. Resultados completos em 21 dias.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    "E se não conseguir cumprir os 21 dias?"
+                </div>
+                <div class="faq-answer">
+                    O rastreador torna fácil. É literalmente apenas marcar caixas no seu celular ou papel uma vez por dia. As refeições são simples. Se 127 homens conseguiram (incluindo executivos com agenda lotada), você consegue.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    "Preciso de equipamento especial ou suplementos caros?"
+                </div>
+                <div class="faq-answer">
+                    Não. Você precisa de: 1) Glicosímetro (R$ 30-80 na farmácia), 2) Ingredientes normais do supermercado, 3) 20 minutos por dia para caminhar. Nada de equipamento caro ou suplementos exóticos.
+                </div>
+            </div>
+        </div>
+
+        <!-- FINAL CTA -->
+        <div class="section" style="text-align: center; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white;">
+            <h2 style="color: white;">Sua Decisão Agora</h2>
+
+            <p style="font-size: 20px; margin: 25px 0;">
+                <strong>Opção 1:</strong> Comprar Reset Primal por R$ 97, seguir o protocolo por 21 dias e reverter sua síndrome metabólica com dados rastreados.
+            </p>
+
+            <p style="font-size: 16px; opacity: 0.9; margin-bottom: 30px;">
+                (63 vagas restantes no lançamento)
+            </p>
+
+            <p style="font-size: 20px; margin: 25px 0;">
+                <strong>Opção 2:</strong> Não fazer nada. Daqui 21 dias, sua glicose estará no mesmo lugar (ou mais alta). Sua energia, igual. Sua barriga, igual.
+            </p>
+
+            <p style="font-size: 22px; font-weight: 700; margin: 35px 0 30px;">
+                Eu sei qual você deveria escolher. A questão é: você sabe?
+            </p>
+
+            <a href="#comprar" class="cta-button">Começar Protocolo de 21 Dias — R$ 97</a>
+
+            <div style="margin-top: 30px; font-size: 15px; opacity: 0.9;">
+                ✓ Acesso imediato (e-book + cardápios + rastreador)<br>
+                ✓ Garantia de 30 dias<br>
+                ✓ Suporte email nos primeiros 30 dias
+            </div>
+        </div>
+
+        <!-- EMAIL CAPTURE (Optional) -->
+        <div class="section" style="background: #f8f9fa; border: 2px dashed #6c757d;">
+            <h3 style="text-align: center;">Não Está Pronto Para Começar?</h3>
+            <p style="text-align: center; font-size: 17px; margin: 20px 0;">
+                Receba a <strong>Série Diagnóstico Metabólico</strong> (5 emails gratuitos)
+            </p>
+            <p style="text-align: center; font-size: 15px; color: #6c757d; margin-bottom: 25px;">
+                Você vai aprender os 3 sinais de resistência à insulina que seu médico ignora + como medir sua glicose corretamente em casa
+            </p>
+
+            <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
+                <input type="email" placeholder="seu@email.com" style="flex: 1; padding: 15px; border: 1px solid #ced4da; border-radius: 6px; font-size: 16px;">
+                <button type="submit" style="background: #1e3c72; color: white; border: none; padding: 15px 30px; border-radius: 6px; font-weight: 600; cursor: pointer;">Enviar</button>
+            </form>
+        </div>
+
+        <!-- PS -->
+        <div class="section" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+            <p style="font-size: 18px; font-weight: 600; margin-bottom: 15px;">
+                P.S. Lembre-se:
+            </p>
+            <p style="font-size: 17px;">
+                Você tem 30 dias para testar Reset Primal. Se seguir o protocolo por 7 dias (rastreado no checklist) e não ver sua glicose cair ou energia melhorar, você recebe reembolso total. Estou apostando em você para vencer.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>© 2026 Reset Primal. Todos os direitos reservados.</p>
+        <p style="margin-top: 20px; font-size: 13px;">
+            Este site não oferece conselhos médicos. Consulte seu médico antes de fazer mudanças significativas na dieta.
+        </p>
+    </div>
+
+</body>
+</html>

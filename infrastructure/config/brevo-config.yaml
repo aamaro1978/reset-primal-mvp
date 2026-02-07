@@ -1,0 +1,29 @@
+# Brevo Configuration
+service: brevo
+type: email-service-api
+status: configured
+
+sender:
+  email: noreply@resetprimal.com
+  verified: pending-confirmation
+
+api:
+  base_url: https://api.brevo.com/v3
+  endpoints:
+    - send_transactional_email
+    - get_contact
+    - create_list
+    - add_contact_to_list
+
+token_management:
+  lifetime: unlimited
+  renewal: not_applicable
+  check_interval: daily
+
+health_checks:
+  - name: api_connectivity
+    endpoint: https://api.brevo.com/v3/account
+    frequency: hourly
+  - name: sender_status
+    check: email_deliverability
+    frequency: daily

@@ -1,0 +1,29 @@
+# Airtable Configuration
+service: airtable
+type: crm-database-api
+status: configured
+
+base:
+  id: appXXXXXXXXXXXXXX
+  tables:
+    - customers
+    - leads
+    - orders
+    - interactions
+
+api:
+  base_url: https://api.airtable.com/v0
+  rate_limit: 5_requests_per_second
+
+token_management:
+  lifetime: unlimited
+  renewal: not_applicable
+  check_interval: daily
+
+health_checks:
+  - name: api_connectivity
+    endpoint: https://api.airtable.com/v0/meta/bases
+    frequency: hourly
+  - name: table_access
+    check: read_sample_records
+    frequency: daily

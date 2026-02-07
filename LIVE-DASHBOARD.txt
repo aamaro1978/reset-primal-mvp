@@ -1,0 +1,205 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║              🚀 RESET PRIMAL MVP - LIVE EXECUTION DASHBOARD 🚀              ║
+║                                                                              ║
+║                      FEB 6, 2026 | SQUAD EXECUTION                           ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+⏰ TIMELINE (REAL-TIME EXECUTION)
+═════════════════════════════════════════════════════════════════════════════
+
+09:00    ✅ ALL 3 SQUADS START
+         ├─ @devops: Pre-requisite validation
+         ├─ @dev: Architecture review (5 min)
+         └─ @qa: Test plan outline (10 min)
+
+10:40    ✅ CHECKPOINT 2 REACHED
+         └─ setup-integrations.sh COMPLETED (7/7 services UP + 8 configs + 2 snippets)
+
+10:45    🔄 PARALLEL EXECUTION STARTED (NOW)
+         ├─ @devops: GitHub Actions setup (14 GitHub Secrets + push)
+         ├─ @dev: GA4 + Meta snippets (30m) → Email sequences (45m)
+         └─ @qa: Test plan (30m) + Test accounts (30m)
+
+11:00    ⏳ HEALTH-CHECK MILESTONE (automatic)
+         └─ 🟢 First automated health-check runs (should show 7/7 green)
+
+12:00    ⏳ SQUAD COMPLETION (expected)
+         ├─ @devops: GitHub Actions running in Actions tab
+         ├─ @dev: All snippets + email sequences ready
+         └─ @qa: Test plan + 5 test accounts ready
+
+18:00    ⏳ DAILY STANDUP
+         └─ All 3 squads report final status
+
+
+📊 DETAILED SQUAD BREAKDOWN
+═════════════════════════════════════════════════════════════════════════════
+
+┌─ ⚡ DEVOPS SQUAD (Gage) - 🔄 EXECUTING NOW
+│
+├─ 🎯 MISSION: Infrastructure automation (setup ✅ → GitHub Actions 🔄)
+├─ ⏱️ DEADLINE: FEB 8, 18h
+│
+├─ ✅ COMPLETED: Pre-requisite validation
+│  └─ All 13 env vars SET + setup-integrations.sh executed
+│
+├─ 🔄 CURRENT TASK: GitHub Actions setup (10 min, IN PROGRESS)
+│  ├─ [ ] Add 14 GitHub Secrets to repository
+│  ├─ [ ] Commit .github/workflows/integrations-automation.yml
+│  ├─ [ ] Push to remote
+│  └─ [ ] Report: "✅ Workflow running in Actions tab"
+│
+├─ ⏳ NEXT: Health-check validation (automatic at 11:00)
+│  └─ Verify 7/7 services green in GitHub Actions
+│
+└─ ETA: ✅ 11:30 (GitHub Actions running live)
+
+
+┌─ 💻 DEV SQUAD (Dex) - 🔄 EXECUTING NOW
+│
+├─ 🎯 MISSION: Snippets + Email sequences (Google Analytics + Meta tracking + Automation)
+├─ ⏱️ DEADLINE: FEB 8, 18h
+│
+├─ 🔄 PHASE 1 (30 min): Install tracking snippets
+│  ├─ [ ] Copy GA4 snippet → /reset-primal-landing/ (all 3 versions)
+│  ├─ [ ] Copy GA4 snippet → /reset-primal-tracker/ (app)
+│  ├─ [ ] Copy Meta Pixel snippet → /reset-primal-landing/ (all 3 versions)
+│  ├─ [ ] Copy Meta Pixel snippet → /reset-primal-tracker/ (app)
+│  └─ [ ] Test: Events firing, no console errors
+│
+├─ 🔄 PHASE 2 (45 min): Plan 5 email sequences with timing
+│  ├─ [ ] Email 1: Welcome + app link (immediate post-purchase)
+│  ├─ [ ] Email 2: How to access (1h after purchase)
+│  ├─ [ ] Email 3: First lesson content (1 day after)
+│  ├─ [ ] Email 4: Implementation tips (3 days after)
+│  └─ [ ] Email 5: Feedback + upsell (5 days after)
+│
+├─ ⏳ NEXT: Documentation + handoff to QA
+│
+└─ ETA: ✅ 12:00 (all snippets + sequences complete)
+
+
+┌─ ✅ QA SQUAD (Quinn) - 🔄 EXECUTING NOW
+│
+├─ 🎯 MISSION: Test infrastructure (planning → accounts → monitoring)
+├─ ⏱️ DEADLINE: FEB 10, 20h
+│
+├─ 🔄 PHASE 1 (30 min): Create comprehensive test plan
+│  ├─ [ ] FUNCTIONAL: Purchase flow (5 scenarios)
+│  │   └─ Success flow, partial failure, network error, timeout, refund
+│  ├─ [ ] ERROR HANDLING: What breaks? (4 scenarios)
+│  │   └─ Invalid card, wrong email, duplicate email, missing data
+│  ├─ [ ] LOAD TESTING: 50 concurrent users
+│  ├─ [ ] MULTI-DEVICE: Desktop, mobile, tablet testing
+│  ├─ [ ] SECURITY: Authorization + access control
+│  └─ [ ] Output: Detailed test plan document
+│
+├─ 🔄 PHASE 2 (30 min): Setup 5 test accounts
+│  ├─ [ ] Create teste1@example.com
+│  ├─ [ ] Create teste2@example.com
+│  ├─ [ ] Create teste3@example.com
+│  ├─ [ ] Create teste4@example.com
+│  ├─ [ ] Create teste5@example.com
+│  └─ [ ] Verify: All accounts ready for FEB 8 testing
+│
+├─ ⏳ THEN: Setup monitoring (FEB 6-7)
+│  ├─ [ ] Chrome DevTools + network inspection
+│  ├─ [ ] Load testing tool (JMeter or Locust)
+│  └─ [ ] Slack alert integration
+│
+└─ ETA: ✅ 12:00 (plan + accounts ready)
+
+
+🎯 CHECKPOINTS (Real-time monitoring)
+═════════════════════════════════════════════════════════════════════════════
+
+✅ CHECKPOINT 1 (09:05 - COMPLETED)
+  @devops: "✅ Pre-requisites validated. All 13 env vars SET."
+  @dev: "✅ Architecture understood. Snippets ready to install."
+  @qa: "✅ Test infrastructure understood."
+
+✅ CHECKPOINT 2 (10:40 - COMPLETED)
+  @devops: "✅ setup-integrations.sh executed. All 7 services UP!"
+  @dev: "✅ Snippets & sequence files ready in /infrastructure/config/"
+  @qa: "✅ Test plan requirements clear. Ready to create."
+
+🔄 CHECKPOINT 3 (10:45 - IN PROGRESS - NOW)
+  @devops: "🔄 GitHub Actions setup in progress (14 secrets + push)"
+  @dev: "🔄 Installing GA4 + Meta snippets in all pages/app"
+  @qa: "🔄 Creating test plan + setting up test accounts"
+
+⏳ CHECKPOINT 4 (11:00 - EXPECTED)
+  @devops: "✅ Health-check automatic run (7/7 green?)"
+  @dev: "✅ All snippets installed + email sequences planned"
+  @qa: "✅ Test plan created + test accounts ready"
+
+⏳ CHECKPOINT 5 (12:00 - EXPECTED)
+  All squads: Final status report before daily standup
+
+⏳ CHECKPOINT 6 (18:00 - SCHEDULED)
+  All squads: Daily standup + tomorrow's plan
+
+
+📈 SUCCESS METRICS (What Success Looks Like)
+═════════════════════════════════════════════════════════════════════════════
+
+By 11:00 AM:
+  ✅ setup-integrations.sh executed (15 min)
+  ✅ First health-check running (should show 7/7 green)
+  ✅ GitHub Actions automated
+  ✅ Email sequences planned (5 templates ready)
+  ✅ Snippets installed (GA4 + Meta in all pages)
+  ✅ Test plan detailed (all 5 categories)
+  ✅ Test accounts created (5 emails)
+
+By 18:00 (EOD):
+  ✅ All infrastructure working
+  ✅ All snippets deployed
+  ✅ All test plans ready
+  ✅ All systems green
+  ✅ All 3 squads report status
+
+By FEB 8, 18h (Execution Complete):
+  ✅ All 7 integrations automated 24/7
+  ✅ Email flowing automatically
+  ✅ App fully validated
+  ✅ QA testing complete
+  ✅ Zero manual intervention needed
+
+
+🚨 BLOCKERS (If Any Squad Gets Stuck)
+═════════════════════════════════════════════════════════════════════════════
+
+Format: [TIMESTAMP] [SQUAD] [ISSUE] [REQUIRED]
+
+ACTIVE BLOCKERS: NONE ✅
+
+RESOLVED:
+  - [09:40→10:40] @devops GA4_API_SECRET missing
+    └─ RESOLVED: User provided GA4_API_SECRET
+    └─ OUTCOME: setup-integrations.sh completed successfully ✅
+
+
+⚡ HOW TO READ THIS DASHBOARD
+═════════════════════════════════════════════════════════════════════════════
+
+1. Check the TIMELINE section → Know what's happening now
+2. Check the DETAILED SQUAD BREAKDOWN → See who's doing what
+3. Check CHECKPOINTS → Know when next milestone is coming
+4. Check BLOCKERS → If something's stuck
+
+Keep this file OPEN while squads are working.
+Refresh/reopen every 5 minutes to see updates.
+
+PRO TIP: Three things reduce TDAH anxiety:
+  ✅ Clear progress (this dashboard)
+  ✅ Frequent checkpoints (every 5 min)
+  ✅ Small wins (each task is 5-15 min max)
+
+
+═════════════════════════════════════════════════════════════════════════════
+                    🎯 YOU GOT THIS! LET'S GO! 🚀
+═════════════════════════════════════════════════════════════════════════════

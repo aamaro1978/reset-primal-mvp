@@ -1,0 +1,27 @@
+# Meta Pixel Configuration
+service: meta-pixel
+type: javascript-conversion-tracking
+status: snippet-generated
+
+pixel:
+  id: 264259201391850
+  events:
+    - page_view
+    - view_content
+    - add_to_cart
+    - purchase
+    - lead
+    - complete_registration
+
+token_management:
+  lifetime: unlimited
+  renewal: not_applicable
+  check_interval: hourly
+
+health_checks:
+  - name: pixel_firing
+    method: javascript-console
+    frequency: real-time
+  - name: event_delivery
+    endpoint: https://www.facebook.com/tr
+    frequency: hourly

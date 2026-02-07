@@ -1,0 +1,25 @@
+# Hotmart Configuration
+service: hotmart
+type: webhook-based-payment-gateway
+status: configured
+
+webhook:
+  enabled: true
+  validation: signature-based
+  algorithm: sha256
+  retry_policy:
+    max_attempts: 3
+    backoff_seconds: 60
+
+token_management:
+  lifetime: unlimited
+  renewal: not_applicable
+  check_interval: daily
+
+health_checks:
+  - name: api_connectivity
+    endpoint: https://api.hotmart.com/v1/user
+    frequency: hourly
+  - name: webhook_delivery
+    target: /api/webhooks/hotmart
+    frequency: continuous

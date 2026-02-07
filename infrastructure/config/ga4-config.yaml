@@ -1,0 +1,25 @@
+# GA4 Configuration
+service: ga4
+type: javascript-event-tracking
+status: snippet-generated
+
+measurement:
+  id: configured-in-env
+  events:
+    - purchase
+    - page_view
+    - user_engagement
+    - conversion
+
+token_management:
+  lifetime: unlimited
+  renewal: not_applicable
+  check_interval: hourly
+
+health_checks:
+  - name: event_delivery
+    method: javascript-console
+    frequency: real-time
+  - name: data_integrity
+    endpoint: https://www.google-analytics.com/collect
+    frequency: hourly

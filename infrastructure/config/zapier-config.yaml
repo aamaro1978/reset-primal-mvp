@@ -1,0 +1,37 @@
+# Zapier Configuration
+service: zapier
+type: webhook-orchestration
+status: configured
+
+webhook:
+  delivery_method: json-post
+  retry_policy:
+    max_attempts: 5
+    backoff_exponential: true
+    max_wait_seconds: 300
+
+  triggers:
+    - hotmart_purchase
+    - user_signup
+    - email_sent
+    - payment_confirmed
+
+  actions:
+    - create_airtable_record
+    - send_email_brevo
+    - track_ga4_event
+    - notify_slack
+
+token_management:
+  lifetime: unlimited
+  renewal: not_applicable
+  task_limit: 100_per_month
+  check_interval: daily
+
+health_checks:
+  - name: webhook_delivery
+    test_payload: enabled
+    frequency: hourly
+  - name: automation_execution
+    check: task_log_review
+    frequency: daily

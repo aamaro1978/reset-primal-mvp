@@ -1,0 +1,42 @@
+# Supabase Configuration
+service: supabase
+type: postgresql-auth-database
+status: configured
+
+database:
+  engine: postgresql
+  tables:
+    - users
+    - products
+    - orders
+    - payments
+    - email_logs
+
+auth:
+  provider: supabase-auth
+  methods:
+    - email_password
+    - email_link
+    - oauth
+
+api:
+  rest: enabled
+  realtime: enabled
+  graphql: disabled
+
+token_management:
+  lifetime: unlimited
+  renewal: not_applicable
+  connection_pooling: enabled
+  max_connections: 20
+
+health_checks:
+  - name: database_connectivity
+    method: test_query
+    frequency: hourly
+  - name: auth_system
+    check: verify_jwt_token
+    frequency: daily
+  - name: connection_pool
+    check: active_connections
+    frequency: continuous

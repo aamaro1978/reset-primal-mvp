@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Primal - Reverta Síndrome Metabólica em 21 Dias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: linear-gradient(135deg, #f0fdf4 0%, #f5f5f5 100%);
+        }
+
+        /* URGENCY BANNER - Nova */
+        .urgency-banner {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+            animation: slideDown 0.4s ease-out;
+        }
+
+        .urgency-banner span {
+            background: rgba(255,255,255,0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin: 0 0.5rem;
+            font-weight: 700;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            z-index: 50;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        /* HERO SECTION - Melhorado */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem 3rem;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            animation: slideUp 0.6s ease-out 0.1s backwards;
+        }
+
+        .hero > p {
+            animation: slideUp 0.6s ease-out 0.2s backwards;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 1rem 0.5rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(22, 163, 74, 0.3);
+            animation: pulse 0.3s ease-out;
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 10px 20px rgba(22, 163, 74, 0.3);
+            }
+            50% {
+                box-shadow: 0 15px 30px rgba(22, 163, 74, 0.5);
+            }
+            100% {
+                box-shadow: 0 10px 20px rgba(22, 163, 74, 0.3);
+            }
+        }
+
+        .secondary-button {
+            background: #e5e7eb;
+            color: #1f2937;
+        }
+
+        .secondary-button:hover {
+            background: #d1d5db;
+            box-shadow: none;
+        }
+
+        /* SIDEBAR FORM - Nova */
+        .sidebar-form {
+            position: fixed;
+            right: 0;
+            top: 120px;
+            width: 320px;
+            background: white;
+            border-radius: 12px 0 0 12px;
+            box-shadow: -4px 4px 20px rgba(0,0,0,0.1);
+            padding: 2rem 1.5rem;
+            z-index: 99;
+            animation: slideInRight 0.5s ease-out;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .sidebar-form h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .sidebar-form-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .sidebar-form-close:hover {
+            color: #1f2937;
+        }
+
+        /* MOBILE STICKY CTA - Nova */
+        .mobile-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #16a34a;
+            padding: 1rem;
+            text-align: center;
+            z-index: 98;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .mobile-cta button {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            background: white;
+            color: #16a34a;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar-form {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-cta {
+                display: block;
+            }
+            main {
+                padding-bottom: 80px;
+            }
+        }
+
+        /* PROBLEM SECTION */
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: #4b5563;
+            line-height: 1.8;
+        }
+
+        /* VALUE STACK */
+        .value-stack {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .value-item {
+            background: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #16a34a;
+            transition: all 0.3s ease;
+            animation: slideInItem 0.4s ease-out backwards;
+        }
+
+        .value-item:nth-child(1) { animation-delay: 0.05s; }
+        .value-item:nth-child(2) { animation-delay: 0.15s; }
+        .value-item:nth-child(3) { animation-delay: 0.25s; }
+        .value-item:nth-child(4) { animation-delay: 0.35s; }
+
+        @keyframes slideInItem {
+            from {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .value-item:hover {
+            transform: translateX(8px);
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+        }
+
+        .value-item h3 {
+            color: #16a34a;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .value-item .price {
+            color: #999;
+            font-size: 0.9rem;
+            text-decoration: line-through;
+        }
+
+        /* PRICING */
+        .pricing-section {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .price-display {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #16a34a;
+            margin: 1rem 0;
+        }
+
+        .price-info {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .testimonial {
+            background: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 3px solid #16a34a;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.5s ease-out backwards;
+        }
+
+        .testimonial:nth-child(1) { animation-delay: 0.1s; }
+        .testimonial:nth-child(2) { animation-delay: 0.2s; }
+        .testimonial:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .testimonial:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .testimonial-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-metric {
+            color: #16a34a;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 0;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        /* GUARANTEE */
+        .guarantee {
+            background: linear-gradient(135deg, #fff7ed 0%, #fef2f2 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #fca5a5;
+            margin: 2rem 0;
+        }
+
+        .guarantee h3 {
+            color: #991b1b;
+            margin-bottom: 1rem;
+        }
+
+        /* CHECKLIST */
+        .checklist {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #16a34a;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* EMAIL FORM - Melhorado */
+        .email-form {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: 3rem auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid #16a34a;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .email-form h2 {
+            animation: slideUp 0.6s ease-out 0.1s backwards;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            animation: slideUp 0.6s ease-out backwards;
+        }
+
+        .form-group:nth-child(2) { animation-delay: 0.15s; }
+        .form-group:nth-child(3) { animation-delay: 0.25s; }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 0.95rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.85rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #16a34a;
+            box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-checkbox input[type="checkbox"] {
+            width: auto;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+
+        .form-checkbox label {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .form-group button {
+            animation: slideUp 0.6s ease-out 0.3s backwards;
+        }
+
+        /* FEATURES GRID */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h4 {
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.05rem;
+            }
+
+            .value-stack {
+                grid-template-columns: 1fr;
+            }
+
+            .price-display {
+                font-size: 2.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .email-form {
+                margin: 3rem 0;
+                border-radius: 8px;
+            }
+        }
+
+        .highlight {
+            color: #16a34a;
+            font-weight: 600;
+        }
+
+        .warning-text {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: #f0fdf4;
+            border: 2px solid #16a34a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .success-box h3 {
+            color: #15803d;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- URGENCY BANNER - NEW -->
+    <div class="urgency-banner">
+        ⏰ Preço de pré-lançamento: <span id="timer">2 dias</span> restam • R$ 297 (depois sobe para R$ 597)
+    </div>
+
+    <header>
+        <div class="container">
+            <h1 style="font-size: 1.5rem; color: #16a34a;">🔄 Reset Primal</h1>
+            <p>Reverter Síndrome Metabólica em 21 Dias</p>
+        </div>
+    </header>
+
+    <!-- MOBILE CTA - NEW -->
+    <div class="mobile-cta">
+        <button onclick="document.querySelector('.email-form').scrollIntoView({behavior: 'smooth'})">
+            🚀 Começar Agora (R$ 297)
+        </button>
+    </div>
+
+    <!-- SIDEBAR FORM - NEW -->
+    <div class="sidebar-form">
+        <button class="sidebar-form-close" onclick="this.parentElement.style.display='none'">✕</button>
+        <h3>Pronto para começar?</h3>
+        <form onsubmit="handleSidebarSubmit(event)">
+            <div class="form-group">
+                <label for="sidebar-email">Seu Email</label>
+                <input type="email" id="sidebar-email" name="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-checkbox">
+                <input type="checkbox" id="sidebar-terms" required>
+                <label for="sidebar-terms">Concordo em receber os próximos passos por email</label>
+            </div>
+            <button type="submit" class="cta-button" style="width: 100%; font-size: 1rem;">
+                🚀 Começar Agora
+            </button>
+        </form>
+        <p style="text-align: center; color: #999; margin-top: 1rem; font-size: 0.8rem;">
+            Sem spam. Desinscreva-se a qualquer momento.
+        </p>
+    </div>
+
+    <main>
+        <!-- HERO SECTION -->
+        <div class="hero container">
+            <h1>Reverta Sua Síndrome Metabólica em 21 Dias</h1>
+            <h2 class="hero-subtitle" style="font-size: 1.3rem; margin: 1.5rem 0;">
+                (Sem cortar calorias ou fazer exercícios intensos)
+            </h2>
+            <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+                O protocolo exato usado por 500+ homens para resetar sua glicose de jejum,<br>
+                perder peso teimoso e acordar com energia novamente.
+            </p>
+            <div>
+                <button class="cta-button" onclick="document.querySelector('.email-form').scrollIntoView({behavior: 'smooth'})">
+                    🚀 Quero Começar Agora
+                </button>
+            </div>
+        </div>
+
+        <!-- PROBLEM SECTION -->
+        <div class="section container">
+            <h2>Você Reconhece Isso?</h2>
+            <p>Se você é um homem entre 35-55 anos, há uma boa chance de você ter notado:</p>
+            <ul style="margin-left: 2rem; color: #4b5563;">
+                <li>Sua glicose de jejum está subindo (95, 105, 115...)</li>
+                <li>Sua energia desaba 2-3 horas depois de comer</li>
+                <li>Você ganhou 20-30kg nos últimos 5 anos (principalmente na barriga)</li>
+                <li>Nada do que tentou realmente funcionou</li>
+            </ul>
+            <p style="margin-top: 1.5rem;"><strong>E a pior parte?</strong></p>
+            <p>Você se olha no espelho e não se reconhece mais.</p>
+        </div>
+
+        <!-- THE SOLUTION -->
+        <div class="section container">
+            <h2>O Problema Real</h2>
+            <p>Seu médico te disse: "Você tem síndrome metabólica. Reduza carbos, faça exercício, perca peso."</p>
+            <p style="margin: 1rem 0; font-size: 1.05rem;">
+                <strong>Que é como dizer a alguém com a perna quebrada para "apenas caminhar".</strong>
+            </p>
+            <p>O problema não é força de vontade. Não é que você está comendo demais.</p>
+            <p style="background: #fff7ed; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+                <strong style="color: #b45309; font-size: 1.1rem;">O problema é seu metabolismo estar quebrado.</strong>
+            </p>
+            <p>Suas células não respondem direito à insulina. Seu corpo armazena gordura mesmo quando você come menos. E a cada ano fica pior.</p>
+        </div>
+
+        <!-- THE RESET -->
+        <div class="success-box container">
+            <h3>E se existisse um protocolo específico para isso?</h3>
+            <ul class="checklist" style="font-size: 1.05rem;">
+                <li>E se você pudesse resetar sua função metabólica em apenas 21 dias?</li>
+                <li>E se conseguisse ver mudanças mensuráveis na primeira semana?</li>
+                <li>E se tivesse proof real dos seus resultados?</li>
+            </ul>
+            <p style="margin-top: 1.5rem; font-size: 1.05rem; color: #15803d;">
+                <strong>É exatamente isso que Reset Primal faz.</strong>
+            </p>
+        </div>
+
+        <!-- VALUE STACK -->
+        <div class="section container">
+            <h2>O Que Você Recebe</h2>
+            <p>Quando você investe R$297 em Reset Primal, você recebe:</p>
+
+            <div class="value-stack">
+                <div class="value-item">
+                    <h3>📚 E-book Completo</h3>
+                    <p class="price">Valor: R$597</p>
+                    <p>O protocolo completo Reset Primal (passo a passo)</p>
+                </div>
+
+                <div class="value-item">
+                    <h3>🍽️ Cardápios 21 Dias</h3>
+                    <p class="price">Valor: R$297</p>
+                    <p>Refeições exatas para todos os 21 dias</p>
+                </div>
+
+                <div class="value-item">
+                    <h3>🛒 Listas de Compras</h3>
+                    <p class="price">Valor: R$197</p>
+                    <p>Ingredientes organizados por semana</p>
+                </div>
+
+                <div class="value-item">
+                    <h3>📱 App Rastreador</h3>
+                    <p class="price">Valor: R$747</p>
+                    <p>Checklist diário + métricas + timeline</p>
+                </div>
+            </div>
+
+            <div class="pricing-section">
+                <p>Valor Total: R$ 1.838</p>
+                <div class="price-display">R$ 297</div>
+                <p class="price-info">Você economiza: R$ 1.541 (84% de desconto)</p>
+                <p style="color: #dc2626; font-weight: 600;">Preço de pré-lançamento limitado!</p>
+            </div>
+        </div>
+
+        <!-- WHY IT WORKS -->
+        <div class="section container">
+            <h2>Por Que Funciona</h2>
+            <p><strong>A maioria das pessoas com síndrome metabólica tem resistência à insulina.</strong></p>
+            <p>Suas células não escutam os sinais de insulina direito, então o pâncreas produz mais e mais insulina.</p>
+            <p>Isso causa:</p>
+            <ul style="margin: 1rem 0 1rem 2rem;">
+                <li>Picos de açúcar no sangue depois de comer</li>
+                <li>Queda de energia</li>
+                <li>Armazenamento de gordura (especialmente barriga)</li>
+                <li>Sono ruim</li>
+                <li>Cérebro nevoado</li>
+            </ul>
+            <p><strong style="color: #16a34a;">Reset Primal alveja especificamente a sensibilidade à insulina.</strong></p>
+            <p>Não é sobre calorias. É sobre <em>o que</em> você come para restaurar a capacidade das suas células de responder à insulina.</p>
+            <p style="background: #f0fdf4; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                A maioria das pessoas vê resultados em 2-3 dias. Melhorias mensuráveis em glicose em 7 dias.
+            </p>
+        </div>
+
+        <!-- PROOF / TESTIMONIALS - Melhorado -->
+        <div class="section container">
+            <h2>Resultados Reais de Pessoas Reais</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-meta">
+                            <div class="testimonial-author">Michael, 47</div>
+                            <div class="testimonial-metric">118 → 94 glicose</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Minha glicose de jejum era 118. Depois de 21 dias era 94. Não via números assim em 10 anos. E tenho 6x mais energia."
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">D</div>
+                        <div class="testimonial-meta">
+                            <div class="testimonial-author">David, 52</div>
+                            <div class="testimonial-metric">-12kg em 21 dias</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Perdi 12kg em 21 dias. Mas honestamente, a maior vitória foi acordar sem aquele nevoeiro mental."
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">J</div>
+                        <div class="testimonial-meta">
+                            <div class="testimonial-author">James, 50</div>
+                            <div class="testimonial-metric">Confiança restaurada</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Minha esposa fez um comentário sobre como pareço diferente. Isso não acontece aos 50. A confiança sozinha valeu."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GUARANTEE -->
+        <div class="guarantee container">
+            <h3>Garantia de 60 Dias</h3>
+            <p>Estou tão confiante que Reset Primal funciona que ofereço reembolso total se não estiver satisfeito.</p>
+            <p style="margin-top: 1rem; font-weight: 600;">Mas tem uma coisa:</p>
+            <p style="background: white; padding: 1rem; border-radius: 6px; margin-top: 1rem;">
+                Para se qualificar para o reembolso, você precisa:
+            </p>
+            <ul class="checklist">
+                <li>Usar o rastreador por todos os 21 dias</li>
+                <li>Seguir o protocolo conforme indicado</li>
+                <li>Registrar seu checklist diário e métricas semanais</li>
+            </ul>
+            <p style="margin-top: 1rem;">
+                <strong>Por que isso?</strong> Porque descobri algo importante: as pessoas que veem resultados são as que <em>realmente fazem o trabalho</em>.
+            </p>
+            <p style="margin-top: 1rem; color: #991b1b;">
+                <strong>Se você se comprometer com 21 dias e AINDA não vir melhora, você recebe seu dinheiro de volta. Sem perguntas.</strong>
+            </p>
+        </div>
+
+        <!-- OBJECTIONS HANDLED -->
+        <div class="section container">
+            <h2>Perguntas Comuns</h2>
+
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: #1f2937; margin-bottom: 0.5rem;">
+                    "Já tentei tudo. Por que isso seria diferente?"
+                </h3>
+                <p>
+                    Porque isso não é outro programa genérico de saúde. É especificamente projetado para síndrome metabólica.
+                    A maioria dos programas ignora a causa raiz (resistência à insulina) e foca nos sintomas (perda de peso).
+                    Reset Primal corrige a raiz.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: #1f2937; margin-bottom: 0.5rem;">
+                    "Quanto tempo até ver resultados?"
+                </h3>
+                <p>
+                    A maioria das pessoas nota mudanças de energia em 3-5 dias. Melhorias mensuráveis em glicose em 7 dias.
+                    Perda de peso normalmente começa na semana 2. Resultados completos em 21 dias.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: #1f2937; margin-bottom: 0.5rem;">
+                    "E se não conseguir cumprir os 21 dias?"
+                </h3>
+                <p>
+                    O rastreador torna fácil. É literalmente apenas marcar caixas no seu celular uma vez por dia.
+                    As refeições são simples. Você consegue fazer isso.
+                </p>
+            </div>
+        </div>
+
+        <!-- FEATURES HIGHLIGHT -->
+        <div class="features container">
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h4>Checklist Diário</h4>
+                <p>Rastreie 6 hábitos essenciais</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h4>Métricas Semanais</h4>
+                <p>Monitore glicose, peso, energia</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <h4>Badges de Conquista</h4>
+                <p>Mantenha-se motivado com prêmios</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h4>Acesso Mobile</h4>
+                <p>Acesse de qualquer lugar, qualquer hora</p>
+            </div>
+        </div>
+
+        <!-- EMAIL SIGNUP FORM - Melhorado -->
+        <div class="email-form">
+            <h2 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.5rem;">
+                Pronto para começar?
+            </h2>
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="form-email">Seu Email</label>
+                    <input type="email" id="form-email" name="email" required placeholder="seu@email.com">
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="form-terms" name="terms" required>
+                    <label for="form-terms">Sim, quero receber os 5 emails do protocolo Reset Primal (sem spam)</label>
+                </div>
+                <button type="submit" class="cta-button" style="width: 100%; font-size: 1.1rem;">
+                    🚀 Começar Meus 21 Dias (R$ 297)
+                </button>
+            </form>
+            <p style="text-align: center; color: #666; margin-top: 1.5rem; font-size: 0.85rem;">
+                ✓ Acesso instantâneo ao e-book, cardápios e app<br>
+                ✓ Protocolo passo a passo de 21 dias<br>
+                ✓ Rastreador de progresso integrado
+            </p>
+        </div>
+
+        <!-- FINAL CTA SECTION -->
+        <div class="section container">
+            <h2 style="text-align: center;">O Que Acontece Depois</h2>
+            <p style="text-align: center; margin-bottom: 2rem; font-size: 1.05rem;">
+                Quando você investe R$297 hoje, você recebe:
+            </p>
+            <ul class="checklist" style="max-width: 500px; margin: 0 auto 2rem;">
+                <li>Acesso instantâneo ao e-book completo</li>
+                <li>Todos os cardápios (prontos para usar)</li>
+                <li>Listas de compras (prontas para imprimir)</li>
+                <li>Acesso ao app rastreador privado</li>
+                <li>Suporte por email (respostas em 24h)</li>
+            </ul>
+            <p style="text-align: center; background: #f0fdf4; padding: 1.5rem; border-radius: 8px;">
+                Você pode começar <strong>hoje</strong>. Em um mês, você saberá se Reset Primal funciona para você.
+            </p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">
+                    ⏰ Preço especial de pré-lançamento: <span class="highlight">R$ 297</span>
+                </h3>
+                <p style="color: #dc2626; font-weight: 600; margin-bottom: 1rem;">
+                    Depois do lançamento, o preço aumenta para R$ 597
+                </p>
+                <button class="cta-button" onclick="document.querySelector('.email-form').scrollIntoView({behavior: 'smooth'})"
+                        style="font-size: 1.2rem; padding: 1.2rem 2rem;">
+                    ➜ Começar Agora (R$ 297)
+                </button>
+            </div>
+        </div>
+
+        <!-- FINAL CLOSING -->
+        <div class="section container" style="text-align: center;">
+            <h2>Sua Escolha</h2>
+            <p style="font-size: 1.1rem; margin: 2rem 0;">
+                Em 21 dias a partir de agora, você pode ser alguém cujo metabolismo foi resetado.
+            </p>
+            <p style="font-size: 1.1rem; margin: 2rem 0;">
+                Ou você pode ficar onde está.
+            </p>
+            <p style="font-size: 1.15rem; font-weight: 600;">
+                Sua escolha.
+            </p>
+            <div style="margin: 2rem 0; font-size: 1.05rem;">
+                <button class="cta-button" onclick="document.querySelector('.email-form').scrollIntoView({behavior: 'smooth'})">
+                    🚀 Começar Minha Transformação
+                </button>
+            </div>
+            <p style="color: #999; margin-top: 2rem; font-style: italic;">
+                P.S. Lembre-se: você tem 60 dias para tentar Reset Primal. Se cumprir o protocolo
+                (rastreado no app) e ainda assim não ver resultados, eu reembolso você.
+                Estou apostando em você para vencer.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Reset Primal. Todos os direitos reservados.</p>
+        <p>Este site não oferece conselhos médicos. Consulte seu médico antes de fazer mudanças significativas na dieta.</p>
+    </footer>
+
+    <script>
+        // COUNTDOWN TIMER - NEW
+        function startCountdown() {
+            const timerElement = document.getElementById('timer');
+            // Set countdown to 2 days from now
+            const endTime = Date.now() + (2 * 24 * 60 * 60 * 1000);
+
+            function updateTimer() {
+                const now = Date.now();
+                const remaining = endTime - now;
+
+                if (remaining <= 0) {
+                    timerElement.textContent = 'Oferta Encerrada';
+                    return;
+                }
+
+                const days = Math.floor(remaining / (24 * 60 * 60 * 1000));
+                const hours = Math.floor((remaining % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                const minutes = Math.floor((remaining % (60 * 60 * 1000)) / (60 * 1000));
+
+                timerElement.textContent = `${days}d ${hours}h ${minutes}m`;
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 60000); // Update every minute
+        }
+
+        // Form handlers
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('form-email').value;
+            const terms = document.getElementById('form-terms').checked;
+
+            if (!terms) {
+                alert('Por favor, aceite os termos para continuar.');
+                return;
+            }
+
+            // TODO: Integrar com ConvertKit API
+            console.log('Form submitted:', { email, terms });
+
+            alert(`Obrigado! Você receberá um email de confirmação em ${email} com os próximos passos.`);
+
+            // TODO: Integrar com Stripe para pagamento
+            // window.location.href = 'https://checkout.stripe.com/...';
+        }
+
+        function handleSidebarSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('sidebar-email').value;
+            const terms = document.getElementById('sidebar-terms').checked;
+
+            if (!terms) {
+                alert('Por favor, aceite os termos para continuar.');
+                return;
+            }
+
+            console.log('Sidebar form submitted:', { email, terms });
+            alert(`Obrigado! Você receberá um email de confirmação em ${email}.`);
+        }
+
+        // Initialize countdown on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            startCountdown();
+        });
+    </script>
+</body>
+</html>
