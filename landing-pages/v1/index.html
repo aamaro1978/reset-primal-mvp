@@ -18,12 +18,24 @@
             background: linear-gradient(135deg, #f0fdf4 0%, #f5f5f5 100%);
         }
 
+        /* ACCESSIBILITY: Respect motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
         /* URGENCY BANNER - Nova */
         .urgency-banner {
             position: sticky;
             top: 0;
             z-index: 100;
-            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);
             color: white;
             padding: 0.75rem 1rem;
             text-align: center;
@@ -143,6 +155,12 @@
             transform: translateY(0);
         }
 
+        .cta-button:focus,
+        .cta-button:focus-visible {
+            outline: 3px solid #16a34a;
+            outline-offset: 2px;
+        }
+
         @keyframes pulse {
             0% {
                 box-shadow: 0 10px 20px rgba(22, 163, 74, 0.3);
@@ -163,6 +181,12 @@
         .secondary-button:hover {
             background: #d1d5db;
             box-shadow: none;
+        }
+
+        .secondary-button:focus,
+        .secondary-button:focus-visible {
+            outline: 3px solid #1f2937;
+            outline-offset: 2px;
         }
 
         /* SIDEBAR FORM - Nova */
@@ -506,8 +530,10 @@
             transition: all 0.2s;
         }
 
-        .form-group input:focus {
-            outline: none;
+        .form-group input:focus,
+        .form-group input:focus-visible {
+            outline: 3px solid #16a34a;
+            outline-offset: 2px;
             border-color: #16a34a;
             box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
         }
@@ -625,6 +651,19 @@
             margin-bottom: 1rem;
         }
 
+        /* ACCESSIBILITY: Screen reader only text */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
         /* LOBO PRIME INTEGRATION */
         .lobo-header {
             width: 80px;
@@ -723,6 +762,11 @@
     <!-- URGENCY BANNER - NEW -->
     <div class="urgency-banner">
         ⏰ Preço de pré-lançamento: <span id="timer">2 dias</span> restam • R$ 297 (depois sobe para R$ 597)
+    </div>
+
+    <!-- ACCESSIBILITY: Screen reader announcement for timer updates -->
+    <div aria-live="polite" aria-atomic="true" class="sr-only">
+        Preço de pré-lançamento: <span id="timer-sr">2 dias</span> restam
     </div>
 
     <header>
@@ -1098,6 +1142,7 @@
         // COUNTDOWN TIMER - NEW
         function startCountdown() {
             const timerElement = document.getElementById('timer');
+            const timerSrElement = document.getElementById('timer-sr');
             // Set countdown to 2 days from now
             const endTime = Date.now() + (2 * 24 * 60 * 60 * 1000);
 
@@ -1107,6 +1152,7 @@
 
                 if (remaining <= 0) {
                     timerElement.textContent = 'Oferta Encerrada';
+                    timerSrElement.textContent = 'Oferta Encerrada';
                     return;
                 }
 
@@ -1114,7 +1160,9 @@
                 const hours = Math.floor((remaining % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                 const minutes = Math.floor((remaining % (60 * 60 * 1000)) / (60 * 1000));
 
-                timerElement.textContent = `${days}d ${hours}h ${minutes}m`;
+                const timerText = `${days}d ${hours}h ${minutes}m`;
+                timerElement.textContent = timerText;
+                timerSrElement.textContent = timerText; // Also update screen reader version
             }
 
             updateTimer();
