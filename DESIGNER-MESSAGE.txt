@@ -1,0 +1,199 @@
+🐺⚡ RESET PRIMAL - LOBO PRIME LAUNCH MVP
+FEB 7 PARALLEL EXECUTION
+
+DISPATCH PARA 3 DESIGNERS
+────────────────────────────────────────
+
+🎨 DESIGNER 1 - INSTAGRAM POSTS
+────────────────────────────────────────
+Task: Create 30 Instagram posts (1080x1080px each)
+Timeline: FEB 7, 09:00 → 15:00
+Deliverable: 30 PNG files (post-01.png → post-30.png)
+
+📁 Saved to: /instagram-assets/posts/
+
+📋 What you need:
+  1. DESIGNER-EXECUTION-MVP.md (Designer 1 section = full specs)
+  2. LOBO-INTEGRATION-VISUAL-EXAMPLES.md (see 6 real mockups)
+  3. lobo-prime-neutro.png (the Lobo asset)
+
+🎯 Key Specs:
+  - Dimensions: 1080x1080px
+  - Lobo: NEUTRO (sizes 60-140px varies per post)
+  - Colors: #1B4D3E (dark green), #BFFF00 (lime glow)
+  - Format: PNG RGB/sRGB
+  - Quality: High-res, sharp edges
+
+✅ Naming: post-01-brain-fog-cause.png, post-02-what-is-bdnf.png, etc
+⏰ Deadline: FEB 7, 15:00
+📊 Status: All specs ready, mockups provided, no blockers
+
+────────────────────────────────────────
+
+📧 DESIGNER 2 - EMAIL TEMPLATES
+────────────────────────────────────────
+Task: Create 25 email templates (5 sequences × 5 emails avg)
+Timeline: FEB 7, 09:00 → 14:30
+Deliverable: 25 HTML files + Lobo assets
+
+📁 Saved to: /email-templates/
+
+📋 What you need:
+  1. DESIGNER-EXECUTION-MVP.md (Designer 2 section = specs + HTML template)
+  2. lobo-prime-neutro.png (100x100px for headers, 60x60px for signature)
+
+🎯 Key Specs:
+  - Header: 600x200px dark green background with Lobo 100x100px
+  - Body: Responsive HTML/CSS
+  - Signature: 60x60px Lobo + "Reset Primal Team" + email
+  - Colors: #1B4D3E, #BFFF00
+  - Test: Render in email clients (Litmus/Email on Acid)
+
+📊 Structure:
+  Sequence 1: Mental Clarity (7 emails)
+  Sequence 2: Weight Loss (7 emails)
+  Sequence 3: Metabolic Health (4 emails)
+  Sequence 4: Retargeting (4 emails)
+  Sequence 5: Post-Purchase (3 emails)
+
+✅ Naming: sequence-1-email-1.html, sequence-1-email-2.html, etc
+⏰ Deadline: FEB 7, 14:30
+📊 Status: HTML template provided (copy-paste ready), all specs clear
+
+────────────────────────────────────────
+
+🎥 DESIGNER 3 - VIDEO THUMBNAILS + STORIES
+────────────────────────────────────────
+Task: Create 3 YouTube thumbnails + 5 Instagram Stories
+Timeline: FEB 7, 09:00 → 17:00
+Deliverable: 8 PNG files (3 + 5)
+
+📁 Saved to: /video-assets/thumbnails/ and /stories-assets/
+
+📋 What you need:
+  1. DESIGNER-EXECUTION-MVP.md (Designer 3 section = full specs)
+  2. LOBO-INTEGRATION-VISUAL-EXAMPLES.md (see thumbnail + stories examples)
+  3. lobo-prime-neutro.png (200x200px for video, 120-150px for stories)
+
+🎯 YouTube Thumbnails (3 files):
+  - Dimensions: 1280x720px
+  - Lobo: NEUTRO 200x200px (recognizable at 150x150px preview)
+  - Background: #1B4D3E
+  - Text: Safe from center play button
+  - Files: thumbnail-1-brain-fog-science.png, thumbnail-2-metabolism-proof.png, thumbnail-3-results-testimonials.png
+
+🎯 Instagram Stories (5 files):
+  - Dimensions: 1080x1920px
+  - Lobo: NEUTRO 120-150px (varies per story)
+  - Background: Photo or gradient
+  - Safe area: 20px from edges (for text)
+  - Interactive notes: Document animation/interactive elements
+  - Files: story-1-brain-fog-check.png → story-5-last-chance.png
+
+✅ Naming: thumbnail-{1-3}-{title}.png and story-{1-5}-{title}.png
+⏰ Deadline: FEB 7, 17:00
+📊 Status: All specs detailed, visual examples provided
+
+────────────────────────────────────────
+
+SHARED SPECIFICATIONS
+────────────────────────────────────────
+
+📚 Reference Documents (All 3 designers):
+  1. DESIGNER-EXECUTION-MVP.md ← MAIN SPECS (read your section carefully)
+  2. LOBO-INTEGRATION-VISUAL-EXAMPLES.md ← SEE HOW IT LOOKS (6 mockups)
+  3. FEB-7-EXECUTION-CHECKLIST.md ← DAY-OF GUIDE
+
+🐺 Asset:
+  lobo-prime-neutro.png ← THE LOBO (500x500px, use at sizes specified)
+
+🎨 Color Codes (Copy-Paste):
+  Dark Green: #1B4D3E
+  Lime Green: #BFFF00 (glow color)
+  White: #FFFFFF
+
+📝 Font Specs:
+  Headlines: Montserrat Bold (28px, 32px, 36px, 40px, 44px, 48px, 52px)
+  Body: Inter Regular (14px, 16px, 18px, 20px, 24px)
+
+────────────────────────────────────────
+
+TIMELINE & DELIVERY
+────────────────────────────────────────
+
+FEB 7:
+├─ 09:00 - All 3 designers START
+├─ 14:30 - Designer 2 completes (25 emails) ✅
+├─ 15:00 - Designer 1 completes (30 posts) ✅
+├─ 17:00 - Designer 3 completes (8 files) ✅
+└─ 20:00 - All 63 assets ready for QA
+
+FEB 8:
+├─ 09:00-12:00 - QA Review
+├─ 13:00-17:00 - Fixes (if needed)
+└─ Final approval
+
+FEB 9:
+├─ 09:00-12:00 - Fiscal validation
+├─ 13:00-18:00 - Delivery to Líderes
+└─ Launch ready
+
+FEB 11:
+└─ 🚀 UNIFIED CAMPAIGN LAUNCH
+
+────────────────────────────────────────
+
+QUALITY GATES (Before Submitting)
+────────────────────────────────────────
+
+✅ Check these before uploading:
+  □ Correct dimensions (1080x1080 posts, 600x200 headers, 1280x720 video, 1080x1920 stories)
+  □ Lobo visible and properly positioned (right size, glow visible)
+  □ Colors accurate (#1B4D3E dark green, #BFFF00 lime glow)
+  □ Text readable at small sizes (thumbnail view)
+  □ Naming follows convention (post-01-*.png, sequence-1-email-1.html, etc)
+  □ No artifacts or distortion
+  □ Email: Responsive + tested in email client
+  □ Files saved to correct directory
+
+────────────────────────────────────────
+
+SUPPORT & QUESTIONS
+────────────────────────────────────────
+
+If stuck:
+  1. Check DESIGNER-EXECUTION-MVP.md (your section has everything)
+  2. Look at LOBO-INTEGRATION-VISUAL-EXAMPLES.md (see real examples)
+  3. Check color/font specs section above (copy-paste ready)
+  4. Message immediately (don't get stuck)
+
+Asset Location:
+  /design-system/mascote-lobo-prime/lobo-prime-neutro.png
+
+Output Directories (Already Created):
+  Designer 1: /instagram-assets/posts/
+  Designer 2: /email-templates/
+  Designer 3: /video-assets/thumbnails/ + /stories-assets/
+
+────────────────────────────────────────
+
+YOU'VE GOT THIS ✅
+
+All specs are pixel-perfect.
+All mockups are provided.
+All directories are ready.
+All references are clear.
+
+→ Open your DESIGNER-EXECUTION-MVP.md section
+→ Follow the timeline
+→ Deliver by deadline
+→ We handle QA & delivery
+
+🎨 Let's build the brand! 🐺⚡
+
+Questions? → Message now
+Ready? → Start at 09:00 FEB 7
+
+────────────────────────────────────────
+LOBO PRIME LAUNCH MVP - FEB 7 EXECUTION
+────────────────────────────────────────
