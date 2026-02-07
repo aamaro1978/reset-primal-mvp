@@ -1,0 +1,217 @@
+Subject: 🎥 RESET PRIMAL - Video + Stories Brief [FEB 7 EXECUTION 09:00 START]
+
+Hi [Designer 3 Name],
+
+Your assignment: Create 3 YouTube thumbnails + 5 Instagram Stories using Lobo Prime.
+
+───────────────────────────────────────────
+
+TIMELINE
+FEB 7, 09:00 → 17:00 (2-3 hours actual work)
+Deliverable: 8 PNG files (3 video + 5 stories)
+Output: /video-assets/thumbnails/ + /stories-assets/
+
+───────────────────────────────────────────
+
+WHAT YOU NEED TO READ
+
+1️⃣ DESIGNER-EXECUTION-MVP.md
+   Section: "DESIGNER 3: VIDEO + STORIES"
+   → Thumbnail specs (1280x720px, Lobo 200x200px)
+   → Stories specs (1080x1920px, Lobo 120-150px)
+   → Safe areas (text placement)
+   → Animation notes format
+
+2️⃣ TOKENS-DESIGNER-REFERENCE.md
+   Section: "Designer 3: Video & Stories"
+   → Copy-paste color hex values
+   → Thumbnail-specific sizing
+   → Story-specific sizing and glow effects
+   → Lobo placement by component type
+   → DO NOT GUESS - reference this document
+
+3️⃣ LOBO-INTEGRATION-VISUAL-EXAMPLES.md
+   Section: "VIDEO THUMBNAIL EXAMPLE" + "INSTAGRAM STORIES EXAMPLE"
+   → See real mockup examples
+   → Visual reference for Lobo positioning
+   → Glow effects shown
+   → Text placement examples
+
+4️⃣ FEB-7-EXECUTION-CHECKLIST.md
+   Section: "DESIGNER 3: VIDEO & STORIES"
+   → Quality validation checklist
+   → What to check before uploading
+
+───────────────────────────────────────────
+
+THE ASSET
+
+🐺 lobo-prime-neutro.png (500x500px, scalable)
+Use at:
+  • Video thumbnails: 200x200px (must be recognizable at 150x150px preview)
+  • Stories: 120-150px (varies per story, with #f0fdf4 glow)
+
+───────────────────────────────────────────
+
+YOUTUBE THUMBNAILS (3 files)
+
+Dimensions:  1280x720px (PNG, 72 DPI)
+Lobo size:   200x200px (top-center position)
+Lobo glow:   Optional, use dark shadow instead
+
+PLACEMENT:
+  • Lobo: Top-center, recognizable at 150x150px
+  • Text: Clear, high contrast
+  • Safe area: 40px from center (play button zone)
+
+BACKGROUND OPTIONS:
+  • #16a34a (dark green) solid
+  • #1B4D3E (darker green) solid
+  • Dark image with good contrast
+
+TEXT:
+  • Color: #ffffff (white)
+  • Font: Montserrat Bold (36px-44px)
+  • Shadow: 0 2px 8px rgba(0,0,0,0.4) for readability
+
+FILES:
+  thumbnail-1-brain-fog-science.png
+  thumbnail-2-metabolism-proof.png
+  thumbnail-3-results-testimonials.png
+
+───────────────────────────────────────────
+
+INSTAGRAM STORIES (5 files)
+
+Dimensions:  1080x1920px (PNG, 72 DPI)
+Lobo size:   120-150px (varies per story, with glow)
+Lobo glow:   #f0fdf4 halo, 15-20px blur effect
+
+PLACEMENT BY STORY:
+  • Story 1 (brain-fog-check): Lobo 140px top-right
+  • Story 2 (transformation-path): Lobo 130px center
+  • Story 3 (results-counter): Lobo 150px top-left
+  • Story 4 (quick-wins): Lobo 120px bottom-right
+  • Story 5 (last-chance): Lobo 140px top-center
+
+BACKGROUND:
+  • Photo background OR
+  • Gradient using #16a34a → #f0fdf4
+
+SAFE AREAS:
+  • Top: 20px padding (status bar)
+  • Bottom: 40px padding (interactive area)
+  • Sides: 20px padding (edge safety)
+  • Text must stay within safe areas
+
+TEXT:
+  • Color: #ffffff (white with shadow for readability)
+  • Font: Montserrat Bold (28px-36px)
+  • Shadow: 0 2px 8px rgba(0,0,0,0.4)
+  • Line height: 1.3 (tight for impact)
+
+INTERACTIVE NOTES:
+  • Document if story has tap/swipe interactions
+  • Note any animation suggestions
+  • Specify CTA placement
+
+FILES:
+  story-1-brain-fog-check.png
+  story-2-transformation-path.png
+  story-3-results-counter.png
+  story-4-quick-wins.png
+  story-5-last-chance.png
+
+───────────────────────────────────────────
+
+LOBO SPECIFICATIONS
+
+Size reference:
+  • 200x200px → YouTube thumbnail (large, prominent)
+  • 150x150px → YouTube preview (recognizable size)
+  • 140x150px → Stories (varies per composition)
+
+Glow effect (stories):
+  • Color: #f0fdf4 (light green)
+  • Blur: 15-20px
+  • Spread: 10px
+  • Apply drop-shadow or outer glow in design tool
+
+───────────────────────────────────────────
+
+QUALITY GATES (Before Uploading)
+
+☑ 3 video thumbnails created (1280x720px)
+☑ 5 Instagram stories created (1080x1920px)
+☑ Lobo properly positioned and sized
+☑ Glow visible (#f0fdf4, 15-20px blur)
+☑ Text readable and safe from play button
+☑ Colors accurate (#16a34a, #1f2937, #f0fdf4)
+☑ Naming follows convention (thumbnail-*, story-*)
+☑ Files saved to correct directories
+☑ No artifacts or distortion
+
+VALIDATION:
+  ☑ Preview at 150x150px (thumbnail readability)
+  ☑ View on mobile (story aspect ratio)
+  ☑ Check safe areas (text not cut off)
+
+───────────────────────────────────────────
+
+TIMELINE BREAKDOWN
+
+09:00-10:00 → Design 3 video thumbnails (1280x720px)
+10:00-12:00 → Design 5 Instagram stories (1080x1920px each)
+12:00-13:00 → Add animation notes + interactivity specs
+13:00 → Quality check + upload
+13:00-17:00 → BUFFER (extra time for revisions if needed)
+17:00 → DONE ✅
+
+───────────────────────────────────────────
+
+COLORS TO USE (Copy-Paste)
+
+Primary:              #16a34a
+Dark green:           #1b4d3e
+Light green (glow):   #f0fdf4
+Text:                 #ffffff (white on dark)
+Secondary text:       #4b5563
+Meta:                 #999999
+
+───────────────────────────────────────────
+
+IF YOU GET STUCK
+
+1. Check TOKENS-DESIGNER-REFERENCE.md (sizes, colors)
+2. Check LOBO-INTEGRATION-VISUAL-EXAMPLES.md (see real examples)
+3. Check DESIGNER-EXECUTION-MVP.md (detailed specs)
+4. Message immediately (don't get stuck, don't guess)
+
+───────────────────────────────────────────
+
+STATUS
+
+✅ All specs detailed
+✅ Visual examples provided
+✅ Lobo sizing clear
+✅ Safe areas documented
+✅ All directories ready
+❌ NO BLOCKERS
+
+───────────────────────────────────────────
+
+Ready?
+
+1. Download all reference files
+2. Get lobo-prime-neutro.png
+3. Start at 09:00 FEB 7
+4. Follow timeline
+5. Deliver by 17:00
+
+We're counting on you! 🎥⚡
+
+Questions? Message immediately.
+
+Let's create! 🐺⚡
+
+— Orion, orchestrating execution

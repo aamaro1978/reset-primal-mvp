@@ -1,0 +1,198 @@
+Subject: 📧 RESET PRIMAL - Email Templates Brief [FEB 7 EXECUTION 09:00 START]
+
+Hi [Designer 2 Name],
+
+Your assignment: Create 25 email templates (5 sequences) using Lobo Prime headers.
+
+───────────────────────────────────────────
+
+TIMELINE
+FEB 7, 09:00 → 14:30 (3.5 hours)
+Deliverable: 25 HTML files
+Output: /email-templates/
+
+───────────────────────────────────────────
+
+WHAT YOU NEED TO READ
+
+1️⃣ DESIGNER-EXECUTION-MVP.md
+   Section: "DESIGNER 2: EMAIL TEMPLATES"
+   → HTML template provided (copy-paste ready!)
+   → Responsive structure
+   → Header dimensions (600x200px)
+   → Lobo placement specs (100x100px headers, 60x60px signatures)
+   → Complete email structure
+
+2️⃣ TOKENS-DESIGNER-REFERENCE.md
+   Section: "Designer 2: Email Templates"
+   → Copy-paste color hex values
+   → Header styling (#16a34a background, white text)
+   → Button specs (exact padding, radius, colors)
+   → Signature structure
+   → DO NOT GUESS - reference this document
+
+3️⃣ FEB-7-EXECUTION-CHECKLIST.md
+   Section: "DESIGNER 2: EMAIL TEMPLATES"
+   → Quality validation checklist
+   → Testing requirements (Litmus, Email on Acid)
+   → What to check before uploading
+
+───────────────────────────────────────────
+
+THE ASSET
+
+🐺 lobo-prime-neutro.png (500x500px, scalable)
+Use at:
+  • Headers: 100x100px (centered or left-aligned)
+  • Signatures: 60x60px (left-aligned)
+
+───────────────────────────────────────────
+
+EMAIL STRUCTURE (Copy-Paste Template)
+
+See DESIGNER-EXECUTION-MVP.md for complete HTML template!
+
+Quick specs:
+
+HEADER (600x200px)
+  Background: #16a34a (dark green)
+  Text: #ffffff (white)
+  Lobo: 100x100px centered or top-left
+  Title: Montserrat Bold, 36px, white
+  Subtitle: Inter Regular, 18px, white
+
+BODY
+  Background: #ffffff (white)
+  Text color: #1f2937 (dark)
+  Secondary text: #4b5563
+  Line height: 1.6
+  Font: Inter Regular, 16px
+
+BUTTONS
+  Background: #16a34a
+  Text: white
+  Padding: 1rem 2.5rem (16px vertical, 40px horizontal)
+  Border radius: 8px
+  Font weight: 700
+  Font size: 16px
+
+SIGNATURE (bottom)
+  Lobo: 60x60px left-aligned
+  Company: "Reset Primal Team" (#1f2937, weight 600)
+  Email: "hello@resetprimal.com" (#4b5563, weight 400, font-size: 14px)
+
+───────────────────────────────────────────
+
+SEQUENCE STRUCTURE
+
+Sequence 1: Mental Clarity (7 emails)
+  → Email content focusing on brain fog recovery
+
+Sequence 2: Weight Loss (7 emails)
+  → Email content focusing on metabolic reset + fat loss
+
+Sequence 3: Metabolic Health (4 emails)
+  → Email content focusing on glucose, energy, results
+
+Sequence 4: Retargeting (4 emails)
+  → Email content for people who didn't convert
+
+Sequence 5: Post-Purchase (3 emails)
+  → Welcome, onboarding, first results
+
+TOTAL: 25 emails across 5 sequences
+
+───────────────────────────────────────────
+
+NAMING CONVENTION (EXACT)
+
+Save all 25 emails as:
+  sequence-1-email-1.html
+  sequence-1-email-2.html
+  sequence-1-email-3.html
+  ... continue ...
+  sequence-5-email-3.html
+
+Directory: /email-templates/
+
+───────────────────────────────────────────
+
+QUALITY GATES (Before Uploading)
+
+☑ 25 HTML files created
+☑ Headers 600x200px with Lobo 100x100px
+☑ Signature with Lobo 60x60px visible
+☑ Responsive: mobile + desktop tested
+☑ Colors match hex values EXACTLY
+☑ All links working
+☑ Naming follows convention (sequence-X-email-Y.html)
+☑ No hardcoded widths (responsive)
+☑ CSS properly scoped (email-safe)
+
+TEST WITH:
+☑ Gmail
+☑ Outlook
+☑ Apple Mail
+☑ Mobile (iPhone/Android)
+
+───────────────────────────────────────────
+
+TIMELINE BREAKDOWN
+
+09:00-10:00 → Design 5 email headers (visual templates)
+10:00-11:00 → Create HTML structure + CSS
+11:00-12:00 → Build Sequence 1 (7 emails)
+12:00-13:00 → Build Sequence 2 (7 emails)
+13:00-14:00 → Build Sequences 3-4 (8 emails)
+14:00-14:30 → Build Sequence 5 (3 emails)
+14:30 → DONE ✅
+
+───────────────────────────────────────────
+
+COLORS TO USE (Copy-Paste)
+
+Header background:      #16a34a
+Text (white):           #ffffff
+Primary text:           #1f2937
+Secondary text:         #4b5563
+CTA button:             #16a34a
+Button text:            #ffffff
+Email background:       #ffffff
+Signature email text:   #4b5563
+
+───────────────────────────────────────────
+
+IF YOU GET STUCK
+
+1. Check TOKENS-DESIGNER-REFERENCE.md (copy-paste values)
+2. Check DESIGNER-EXECUTION-MVP.md (HTML template + specs)
+3. Test in email client (Litmus recommended)
+4. Message immediately (don't get stuck, don't guess)
+
+───────────────────────────────────────────
+
+STATUS
+
+✅ HTML template provided (copy-paste ready)
+✅ All specs detailed
+✅ Color/font values ready
+✅ All directories ready
+❌ NO BLOCKERS
+
+───────────────────────────────────────────
+
+Ready?
+
+1. Download all reference files + HTML template
+2. Get lobo-prime-neutro.png
+3. Start at 09:00 FEB 7
+4. Follow timeline
+5. Deliver by 14:30
+
+We're counting on you! 📧⚡
+
+Questions? Message immediately.
+
+Let's ship! 🐺⚡
+
+— Orion, orchestrating execution

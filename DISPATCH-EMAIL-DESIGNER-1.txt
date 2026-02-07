@@ -1,0 +1,146 @@
+Subject: 🎨 RESET PRIMAL - Instagram Posts Brief [FEB 7 EXECUTION 09:00 START]
+
+Hi [Designer 1 Name],
+
+Your assignment: Create 30 Instagram posts (1080x1080px) using Lobo Prime mascote.
+
+───────────────────────────────────────────
+
+TIMELINE
+FEB 7, 09:00 → 15:00 (6 hours)
+Deliverable: 30 PNG files
+Output: /instagram-assets/posts/
+
+───────────────────────────────────────────
+
+WHAT YOU NEED TO READ
+
+1️⃣ DESIGNER-EXECUTION-MVP.md
+   Section: "DESIGNER 1: INSTAGRAM POSTS"
+   → Line-by-line specs for all 30 posts
+   → Exact colors, sizes, positioning
+   → Typography requirements
+
+2️⃣ TOKENS-DESIGNER-REFERENCE.md
+   Section: "Designer 1: Instagram Posts"
+   → Copy-paste color hex values (#16a34a, #1f2937, #f0fdf4)
+   → Font sizes (Montserrat Bold, Inter Regular)
+   → Spacing system
+   → DO NOT GUESS - reference this document
+
+3️⃣ LOBO-INTEGRATION-VISUAL-EXAMPLES.md
+   Section: "INSTAGRAM INTEGRATION EXAMPLES"
+   → See 2 real mockup examples
+   → Visual reference for Lobo placement
+   → Color usage examples
+
+4️⃣ FEB-7-EXECUTION-CHECKLIST.md
+   Section: "DESIGNER 1: INSTAGRAM POSTS"
+   → Quality validation checklist
+   → Timeline breakdown by hour
+   → What to check before uploading
+
+───────────────────────────────────────────
+
+THE ASSET
+
+🐺 lobo-prime-neutro.png (500x500px, scalable)
+Use at: 60px, 80px, 100px, 120px, 140px (varies per post)
+Add glow: #f0fdf4 halo, 10-15px blur
+Style: Drop shadow 0 4px 12px rgba(0,0,0,0.15)
+
+───────────────────────────────────────────
+
+QUICK SPECS (Copy-Paste)
+
+Dimensions:  1080x1080px (PNG, RGB/sRGB)
+Colors:
+  • Primary:   #16a34a (green for highlights, CTAs)
+  • Text:      #1f2937 (dark gray for body)
+  • Light:     #f0fdf4 (light green for backgrounds/glows)
+  • Secondary: #999999 (gray for meta info)
+
+Typography:
+  • Headlines:  Montserrat Bold (28px-52px, weight 900)
+  • Body:       Inter Regular (14px-24px, weight 400)
+
+Lobo Placement:
+  • Varies per post (see DESIGNER-EXECUTION-MVP.md)
+  • Top-right, center, bottom-left (check specs)
+  • Always visible, glow always clear
+  • Scale: 60-140px depending on post layout
+
+───────────────────────────────────────────
+
+NAMING CONVENTION (EXACT)
+
+Save all 30 posts as:
+  post-01-brain-fog-cause.png
+  post-02-what-is-bdnf.png
+  post-03-[title].png
+  ... continue through ...
+  post-30-last-chance.png
+
+Directory: /instagram-assets/posts/
+
+───────────────────────────────────────────
+
+QUALITY GATES (Before Uploading)
+
+☑ Correct dimensions (1080x1080px)
+☑ Lobo visible and properly positioned
+☑ Glow visible (#f0fdf4, 10-15px blur)
+☑ Colors match hex values EXACTLY
+☑ Text readable at 217px (thumbnail view)
+☑ Naming follows convention (post-01-*.png, etc.)
+☑ No artifacts or distortion
+☑ Files saved to /instagram-assets/posts/
+
+───────────────────────────────────────────
+
+TIMELINE BREAKDOWN
+
+09:00-10:00 → Posts 1-5 (Series A)
+10:00-11:00 → Posts 6-10 (Series A)
+11:00-12:00 → Posts 11-15 (Series B)
+12:00-13:00 → Posts 16-20 (Series B)
+13:00-14:00 → Posts 21-25 (Series C)
+14:00-15:00 → Posts 26-30 (Series C)
+15:00 → DONE ✅
+
+───────────────────────────────────────────
+
+IF YOU GET STUCK
+
+1. Check TOKENS-DESIGNER-REFERENCE.md (colors, sizes)
+2. Check LOBO-INTEGRATION-VISUAL-EXAMPLES.md (see real examples)
+3. Check DESIGNER-EXECUTION-MVP.md (detailed specs)
+4. Message immediately (don't get stuck, don't guess)
+
+───────────────────────────────────────────
+
+STATUS
+
+✅ All specs are pixel-perfect
+✅ All mockups are provided
+✅ All directories are ready
+✅ All references are clear
+❌ NO BLOCKERS
+
+───────────────────────────────────────────
+
+Ready?
+
+1. Download all reference files
+2. Get lobo-prime-neutro.png
+3. Start at 09:00 FEB 7
+4. Follow timeline
+5. Deliver by 15:00
+
+We're counting on you! 🎨⚡
+
+Questions? Message immediately.
+
+Let's build! 🐺⚡
+
+— Orion, orchestrating execution
