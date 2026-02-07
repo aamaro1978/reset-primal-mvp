@@ -1,0 +1,187 @@
+/*
+ * Reset Primal Design Tokens - CSS Variables
+ * Single source of truth for all design values
+ * Use: var(--color-primary-base), var(--spacing-md), etc.
+ */
+
+:root {
+  /* ============================================================
+     COLORS
+     ============================================================ */
+
+  /* Primary Brand - Green System */
+  --color-primary-base: #16a34a;
+  --color-primary-dark: #15803d;
+  --color-primary-light: #f0fdf4;
+
+  /* Semantic - Alerts & Status */
+  --color-alert-base: #dc2626;
+  --color-alert-dark: #b91c1c;
+  --color-alert-background: #fef2f2;
+
+  /* Text Colors */
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4b5563;
+  --color-text-tertiary: #999999;
+  --color-text-light: #666666;
+  --color-text-inverse: #ffffff;
+
+  /* Background & Surfaces */
+  --color-background-base: #ffffff;
+  --color-background-gradient: linear-gradient(135deg, #f0fdf4 0%, #f5f5f5 100%);
+
+  /* Borders & Dividers */
+  --color-border-base: #e5e7eb;
+  --color-border-light: #fca5a5;
+
+  /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+
+  /* Font Family */
+  --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Sizes - 8-point scale */
+  --font-size-h1: 2.5rem;        /* 40px */
+  --font-size-h2: 1.8rem;        /* 28.8px */
+  --font-size-h3: 1.3rem;        /* 20.8px */
+  --font-size-body-lg: 1.1rem;   /* 17.6px */
+  --font-size-body-md: 1rem;     /* 16px */
+  --font-size-body-sm: 0.95rem;  /* 15.2px */
+  --font-size-body-xs: 0.9rem;   /* 14.4px */
+  --font-size-label: 0.85rem;    /* 13.6px */
+
+  /* Font Weights */
+  --font-weight-light: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 900;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+
+  /* ============================================================
+     SPACING - 4px base unit
+     ============================================================ */
+
+  --spacing-xs: 0.5rem;   /* 8px */
+  --spacing-sm: 1rem;     /* 16px */
+  --spacing-md: 1.5rem;   /* 24px */
+  --spacing-lg: 2rem;     /* 32px */
+  --spacing-xl: 3rem;     /* 48px */
+  --spacing-2xl: 4rem;    /* 64px */
+
+  /* ============================================================
+     BORDERS & RADIUS
+     ============================================================ */
+
+  --border-radius-small: 6px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 12px;
+
+  --border-width-hairline: 1px;
+  --border-width-standard: 2px;
+  --border-width-thick: 4px;
+
+  /* ============================================================
+     SHADOWS - Elevation system
+     ============================================================ */
+
+  --shadow-none: none;
+  --shadow-small: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-medium: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-large: 0 10px 20px rgba(0,0,0,0.1);
+
+  /* ============================================================
+     ANIMATIONS
+     ============================================================ */
+
+  --animation-duration-fast: 0.2s;
+  --animation-duration-normal: 0.4s;
+  --animation-duration-slow: 0.6s;
+  --animation-easing-ease-out: ease-out;
+
+  /* ============================================================
+     COMPONENT TOKENS
+     ============================================================ */
+
+  /* Primary Button */
+  --button-primary-bg: var(--color-primary-base);
+  --button-primary-bg-hover: var(--color-primary-dark);
+  --button-primary-text: var(--color-text-inverse);
+  --button-primary-padding: 1rem 2.5rem;
+  --button-primary-font-size: var(--font-size-body-md);
+  --button-primary-font-weight: var(--font-weight-bold);
+  --button-primary-border-radius: var(--border-radius-medium);
+  --button-primary-shadow: var(--shadow-medium);
+
+  /* Form Input */
+  --input-bg: var(--color-background-base);
+  --input-border: 2px solid var(--color-border-base);
+  --input-border-focus: 2px solid var(--color-primary-base);
+  --input-border-radius: var(--border-radius-small);
+  --input-padding: 0.85rem;
+  --input-font-size: var(--font-size-body-md);
+
+  /* Card/Section */
+  --card-bg: var(--color-background-base);
+  --card-border-radius: var(--border-radius-large);
+  --card-padding: 2rem;
+  --card-shadow: var(--shadow-small);
+  --card-margin-bottom: 2rem;
+
+  /* Alert/Banner */
+  --alert-bg: var(--color-alert-base);
+  --alert-text: var(--color-text-inverse);
+  --alert-padding: 0.75rem 1rem;
+  --alert-font-size: var(--font-size-body-sm);
+  --alert-font-weight: var(--font-weight-semibold);
+}
+
+/* ============================================================
+   USAGE EXAMPLES
+   ============================================================ */
+
+/*
+ * Button:
+ * .button {
+ *   background: var(--button-primary-bg);
+ *   color: var(--button-primary-text);
+ *   padding: var(--button-primary-padding);
+ *   border-radius: var(--button-primary-border-radius);
+ * }
+ *
+ * Input:
+ * input {
+ *   border: var(--input-border);
+ *   padding: var(--input-padding);
+ *   border-radius: var(--input-border-radius);
+ * }
+ *
+ * input:focus {
+ *   border: var(--input-border-focus);
+ * }
+ *
+ * Card:
+ * .card {
+ *   background: var(--card-bg);
+ *   padding: var(--card-padding);
+ *   border-radius: var(--card-border-radius);
+ *   box-shadow: var(--card-shadow);
+ * }
+ *
+ * Typography:
+ * h1 {
+ *   font-size: var(--font-size-h1);
+ *   font-weight: var(--font-weight-heavy);
+ *   line-height: var(--line-height-tight);
+ * }
+ *
+ * Spacing:
+ * .container {
+ *   padding: var(--spacing-lg);
+ *   margin-bottom: var(--spacing-md);
+ * }
+ */

@@ -1,0 +1,367 @@
+# Reset Primal Design Tokens
+# W3C Design Tokens Format
+# Single source of truth for all design values
+
+# ============================================================
+# COLORS
+# ============================================================
+
+colors:
+  # PRIMARY BRAND - Green System
+  primary:
+    base:
+      value: '#16a34a'
+      type: color
+      description: 'Primary action color - CTAs, borders, highlights'
+    dark:
+      value: '#15803d'
+      type: color
+      description: 'Darker variant for hover/active states'
+    light:
+      value: '#f0fdf4'
+      type: color
+      description: 'Light background tint for sections'
+
+  # SEMANTIC - Alerts & Status
+  alert:
+    base:
+      value: '#dc2626'
+      type: color
+      description: 'Alert/urgency red for banners'
+    dark:
+      value: '#b91c1c'
+      type: color
+      description: 'Dark red for alert gradients'
+    background:
+      value: '#fef2f2'
+      type: color
+      description: 'Light red background for warnings'
+
+  # TEXT - Typography Colors
+  text:
+    primary:
+      value: '#1f2937'
+      type: color
+      description: 'Main body text and headings'
+    secondary:
+      value: '#4b5563'
+      type: color
+      description: 'Secondary text, descriptions'
+    tertiary:
+      value: '#999999'
+      type: color
+      description: 'Tertiary text, meta information'
+    light:
+      value: '#666666'
+      type: color
+      description: 'Light text on darker backgrounds'
+    inverse:
+      value: '#ffffff'
+      type: color
+      description: 'Text on dark backgrounds'
+
+  # BACKGROUND & SURFACES
+  background:
+    base:
+      value: '#ffffff'
+      type: color
+      description: 'Primary background - cards, forms'
+    gradient:
+      value: 'linear-gradient(135deg, #f0fdf4 0%, #f5f5f5 100%)'
+      type: color
+      description: 'Page background gradient'
+
+  # BORDERS & DIVIDERS
+  border:
+    base:
+      value: '#e5e7eb'
+      type: color
+      description: 'Standard border color'
+    light:
+      value: '#fca5a5'
+      type: color
+      description: 'Light red border for warnings'
+
+# ============================================================
+# TYPOGRAPHY
+# ============================================================
+
+typography:
+  # Font Family
+  font-family:
+    system:
+      value: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+      type: fontFamily
+      description: 'System font stack for all text'
+
+  # Font Sizes - 8-point scale
+  font-size:
+    h1:
+      value: '2.5rem'
+      type: dimension
+      description: 'Hero title - 40px'
+    h2:
+      value: '1.8rem'
+      type: dimension
+      description: 'Section heading - 28.8px'
+    h3:
+      value: '1.3rem'
+      type: dimension
+      description: 'Subsection heading - 20.8px'
+    body-lg:
+      value: '1.1rem'
+      type: dimension
+      description: 'Large body text - 17.6px'
+    body-md:
+      value: '1rem'
+      type: dimension
+      description: 'Standard body text - 16px'
+    body-sm:
+      value: '0.95rem'
+      type: dimension
+      description: 'Small body text - 15.2px'
+    body-xs:
+      value: '0.9rem'
+      type: dimension
+      description: 'Extra small text - 14.4px'
+    label:
+      value: '0.85rem'
+      type: dimension
+      description: 'Form label text - 13.6px'
+
+  # Font Weights
+  font-weight:
+    light:
+      value: '400'
+      type: fontWeight
+      description: 'Regular weight'
+    semibold:
+      value: '600'
+      type: fontWeight
+      description: 'Semibold for labels, emphasis'
+    bold:
+      value: '700'
+      type: fontWeight
+      description: 'Bold for subheadings'
+    heavy:
+      value: '900'
+      type: fontWeight
+      description: 'Heavy for main titles'
+
+  # Line Heights
+  line-height:
+    tight:
+      value: '1.2'
+      type: number
+      description: 'For headings - tighter line height'
+    normal:
+      value: '1.6'
+      type: number
+      description: 'Standard body text'
+    relaxed:
+      value: '1.8'
+      type: number
+      description: 'For longer passages'
+
+# ============================================================
+# SPACING - 4px base unit
+# ============================================================
+
+spacing:
+  xs:
+    value: '0.5rem'
+    type: dimension
+    description: '8px - Small spacing'
+  sm:
+    value: '1rem'
+    type: dimension
+    description: '16px - Small gaps'
+  md:
+    value: '1.5rem'
+    type: dimension
+    description: '24px - Medium gaps'
+  lg:
+    value: '2rem'
+    type: dimension
+    description: '32px - Large spacing'
+  xl:
+    value: '3rem'
+    type: dimension
+    description: '48px - Extra large'
+  2xl:
+    value: '4rem'
+    type: dimension
+    description: '64px - Hero spacing'
+
+# ============================================================
+# BORDERS & RADIUS
+# ============================================================
+
+border-radius:
+  small:
+    value: '6px'
+    type: dimension
+    description: 'Input fields, small components'
+  medium:
+    value: '8px'
+    type: dimension
+    description: 'Cards, sections'
+  large:
+    value: '12px'
+    type: dimension
+    description: 'Large sections, containers'
+
+border-width:
+  hairline:
+    value: '1px'
+    type: dimension
+  standard:
+    value: '2px'
+    type: dimension
+  thick:
+    value: '4px'
+    type: dimension
+
+# ============================================================
+# SHADOWS - Elevation system
+# ============================================================
+
+shadow:
+  none:
+    value: 'none'
+    type: shadow
+  small:
+    value: '0 1px 3px rgba(0,0,0,0.1)'
+    type: shadow
+    description: 'Subtle elevation for cards'
+  medium:
+    value: '0 4px 12px rgba(0,0,0,0.1)'
+    type: shadow
+    description: 'Standard elevation for containers'
+  large:
+    value: '0 10px 20px rgba(0,0,0,0.1)'
+    type: shadow
+    description: 'High elevation for modals'
+
+# ============================================================
+# COMPONENTS - Semantic Tokens
+# ============================================================
+
+components:
+  # Button
+  button:
+    primary:
+      background:
+        value: '{colors.primary.base}'
+        type: color
+      background-hover:
+        value: '{colors.primary.dark}'
+        type: color
+      text:
+        value: '{colors.text.inverse}'
+        type: color
+      padding:
+        value: '1rem 2.5rem'
+        type: dimension
+      border-radius:
+        value: '{border-radius.medium}'
+        type: dimension
+      font-size:
+        value: '{typography.font-size.body-md}'
+        type: dimension
+      font-weight:
+        value: '{typography.font-weight.bold}'
+        type: fontWeight
+      shadow:
+        value: '{shadow.medium}'
+        type: shadow
+      shadow-hover:
+        value: '0 15px 30px rgba(22, 163, 74, 0.5)'
+        type: shadow
+
+    secondary:
+      background:
+        value: '#e5e7eb'
+        type: color
+      text:
+        value: '{colors.text.primary}'
+        type: color
+      background-hover:
+        value: '#d1d5db'
+        type: color
+
+  # Form Input
+  input:
+    background:
+      value: '{colors.background.base}'
+      type: color
+    border:
+      value: '2px solid {colors.border.base}'
+      type: dimension
+    border-focus:
+      value: '2px solid {colors.primary.base}'
+      type: dimension
+    border-radius:
+      value: '{border-radius.small}'
+      type: dimension
+    padding:
+      value: '0.85rem'
+      type: dimension
+    font-size:
+      value: '{typography.font-size.body-md}'
+      type: dimension
+
+  # Card/Section
+  card:
+    background:
+      value: '{colors.background.base}'
+      type: color
+    border-radius:
+      value: '{border-radius.large}'
+      type: dimension
+    padding:
+      value: '2rem'
+      type: dimension
+    shadow:
+      value: '{shadow.small}'
+      type: shadow
+    margin-bottom:
+      value: '2rem'
+      type: dimension
+
+  # Alert/Banner
+  alert:
+    background:
+      value: '{colors.alert.base}'
+      type: color
+    text:
+      value: '{colors.text.inverse}'
+      type: color
+    padding:
+      value: '0.75rem 1rem'
+      type: dimension
+    font-size:
+      value: '{typography.font-size.body-sm}'
+      type: dimension
+    font-weight:
+      value: '{typography.font-weight.semibold}'
+      type: fontWeight
+
+# ============================================================
+# ANIMATIONS
+# ============================================================
+
+animation:
+  duration-fast:
+    value: '0.2s'
+    type: dimension
+  duration-normal:
+    value: '0.4s'
+    type: dimension
+  duration-slow:
+    value: '0.6s'
+    type: dimension
+  easing-ease-out:
+    value: 'ease-out'
+    type: string
+
