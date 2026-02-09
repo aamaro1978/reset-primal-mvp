@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset Primal — Glicose Abaixo de 100 em 21 Dias</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKTGW6BEJP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKTGW6BEJP', {
+        'page_path': window.location.pathname,
+        'page_title': document.title
+      });
+
+      // Custom events tracking
+      window.trackPurchase = function(data) {
+        gtag('event', 'purchase', {
+          'value': data.value,
+          'currency': data.currency || 'BRL',
+          'transaction_id': data.transaction_id
+        });
+      };
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '264259201391850');
+      fbq('track', 'PageView');
+
+      // Custom events
+      window.trackPurchase = function(data) {
+        fbq('track', 'Purchase', {
+          value: data.value,
+          currency: 'BRL',
+          content_name: data.product_name
+        });
+      };
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=264259201391850&ev=PageView&noscript=1"
+    /></noscript>
+
     <style>
         * {
             margin: 0;
