@@ -31,3 +31,12 @@ infrastructure/backups/
 # Temp files
 *.tmp
 .cache/
+
+# Integrations - Never commit credentials
+.env
+.env.local
+.env.encrypted
+.env.*.local
+config/credentials-*
+infrastructure/backups/
+
